@@ -1,0 +1,98 @@
+body {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  margin: 0px;
+}
+
+#main_container {
+  background: url('../images/red-blue.png') no-repeat fixed;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#container {
+  width: 300px;
+  height: auto;
+  background: linear-gradient(to top left, rgb(0, 200, 217), rgb(255, 0, 142));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  padding-top: 20px;
+  margin-left: 30px;
+  position: relative;
+  margin-top: 70px;
+}
+
+
+
+@media screen  and (max-height: 669px), (max-width: 640px) {
+  body {
+    background-color: rgb(41,47,55);
+  }
+  #main_container {
+    background: none;
+    width: 100vw;
+    height: 100vh;
+  }
+  #container {
+    padding: 10px;
+    margin: 0px;
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 799px) and (min-height: 670px) {
+  #main_container {
+    background-size: 600px 670px;
+    width: 600px;
+    height: 670px;
+  }
+}
+
+@media screen and (min-width: 800px) and (min-height: 670px) {
+  #main_container {
+    background-size: 800px 670px;
+    width: 800px;
+    height: 670px;
+  }
+}
+
+#numberInput {
+  height: 40px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  font-family: palatino linotype;
+  font-size: 18px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  padding: 5px;
+}
+#numberInput:focus {
+  outline: none
+}
+#numbersTable {
+  border-collapse: collapse;
+  margin-top: 0px;
+  width: 100%;
+}
+#numbersTable td {
+  padding: 0px;
+  text-align: center;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  color: white;
+  font-family: palatino linotype;
+}
+#numbersTable td:hover {
+  background: rgba(255, 255, 255, 0.3);
+  color: #FFF;
+}
